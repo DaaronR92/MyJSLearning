@@ -90,22 +90,44 @@
 
 // 5 Falsy values 0,'',null,NaN,Undefined,False
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean({}));
-console.log(Boolean('Jonas'));
-console.log(Boolean(0));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean({}));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean(0));
 
-const money = 0;
-if (money) {
-    console.log("Don't spend it all");
+// const money = 0;
+// if (money) {
+//     console.log("Don't spend it all");
+// } else {
+//     console.log("You should get a job");
+// }
+
+// let height = 23;
+// if (height) {
+//     console.log("Yay! Height is defined!");
+// } else {
+//     console.log("Height is undefined.")
+// }
+
+const age = 18;
+if (age === 18) console.log('You just became an adult! ;D (Strict)');
+
+if (age == 18) console.log(' You just became an adult! :D (Loose)');
+
+const favourite = prompt("What is your favorite number?");
+console.log(favourite);
+console.log(typeof favourite);
+// if (favourite == 23) {
+//     console.log("Cool! mine is also 23!")
+// }// '23' == 23 String to number conversion with double equal signs
+
+if (favourite === 23) {
+    console.log("Cool! mine is also 23!")
+} else if (favourite == 7) {
+    console.log('7 is also a cool number')
 } else {
-    console.log("You should get a job");
+    console.log("Neither 23 or 7")
 }
 
-let height = 23;
-if (height) {
-    console.log("Yay! Height is defined!");
-} else {
-    console.log("Height is undefined.")
-}
+if (favourite !== 23) console.log('Why not 23?');
