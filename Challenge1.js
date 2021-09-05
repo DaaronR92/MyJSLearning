@@ -110,24 +110,46 @@
 //     console.log("Height is undefined.")
 // }
 
-const age = 18;
-if (age === 18) console.log('You just became an adult! ;D (Strict)');
+// const age = 18;
+// if (age === 18) console.log('You just became an adult! ;D (Strict)');
 
-if (age == 18) console.log(' You just became an adult! :D (Loose)');
+// if (age == 18) console.log(' You just became an adult! :D (Loose)');
 
-const favourite = prompt("What is your favorite number?");
-console.log(favourite);
-console.log(typeof favourite);
-// if (favourite == 23) {
+// const favourite = prompt("What is your favorite number?");
+// console.log(favourite);
+// console.log(typeof favourite);
+// // if (favourite == 23) {
+// //     console.log("Cool! mine is also 23!")
+// // }// '23' == 23 String to number conversion with double equal signs
+
+// if (favourite === 23) {
 //     console.log("Cool! mine is also 23!")
-// }// '23' == 23 String to number conversion with double equal signs
+// } else if (favourite == 7) {
+//     console.log('7 is also a cool number')
+// } else {
+//     console.log("Neither 23 or 7")
+// }
 
-if (favourite === 23) {
-    console.log("Cool! mine is also 23!")
-} else if (favourite == 7) {
-    console.log('7 is also a cool number')
+// if (favourite !== 23) console.log('Why not 23?');
+
+const hasDriversLicense = true;// A
+const hasGoodVision = true;// B
+
+console.log(hasDriversLicense && hasGoodVision);// AND
+console.log(hasDriversLicense || hasGoodVision);// OR
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive')
+// } else {
+//     console.log('Someone else should drive.')
+// }
+
+const isTired = false;// C
+console.log(hasGoodVision && hasDriversLicense && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive')
 } else {
-    console.log("Neither 23 or 7")
+    console.log('Someone else should drive.')
 }
-
-if (favourite !== 23) console.log('Why not 23?');
